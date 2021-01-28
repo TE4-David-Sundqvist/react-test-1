@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Test from './components/Test';
-import Router from './components/Router';
+import Router from './router/Router';
 
 function App() {
   return (
