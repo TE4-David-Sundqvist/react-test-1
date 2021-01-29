@@ -6,8 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
-import Home from "../views/Home.jsx";
-import About from "../views/About.jsx";
+import Home from "./views/Home.jsx";
+import About from "./views/About.jsx";
 
 export default function Router() {
   return (
@@ -23,12 +23,8 @@ export default function Router() {
         </ul>
 
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" component={About} />
         </Switch>
 
       </div>
